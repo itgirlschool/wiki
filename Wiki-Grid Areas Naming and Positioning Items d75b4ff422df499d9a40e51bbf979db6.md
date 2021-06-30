@@ -17,7 +17,7 @@ Sets of names should be surrounded in single or double quotes, and each name sep
 
 Each set of names defines a row, and each name defines a column.
 
-![https://github.com/itgirlschool/wiki/Export-ae033eeb-4add-44e3-9363-292a24076cca.zip/Wiki-Grid Areas Naming and Positioning Items d75b4ff422df499d9a40e51bbf979db6/Untitled.png](Wiki-Grid%20Areas%20Naming%20and%20Positioning%20Items%20d75b4ff422df499d9a40e51bbf979db6/Untitled.png)
+![Wiki-Grid%20Areas%20Naming%20and%20Positioning%20Items%20d75b4ff422df499d9a40e51bbf979db6/Untitled.png](Wiki-Grid%20Areas%20Naming%20and%20Positioning%20Items%20d75b4ff422df499d9a40e51bbf979db6/Untitled.png)
 
 `grid-row-start:    header;grid-row-end:      header;grid-column-start: header;grid-column-end:   header;`
 
