@@ -1,5 +1,6 @@
-/* Простой пример добавления карусели (html, css, щепотка js) */
+# Простой пример добавления карусели (html, css, щепотка js) 
 
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -168,6 +169,6 @@ function showSlides(n) {
 
 </body>
 </html> 
-
+```
 
 
