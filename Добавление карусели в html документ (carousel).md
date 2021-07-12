@@ -1,5 +1,7 @@
 # Простой пример добавления карусели (html, css, щепотка js) 
 
+![демонстрация](/pictures/carousel.png)
+
 ```html
 <!DOCTYPE html>
 <html>
