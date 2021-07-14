@@ -84,6 +84,6 @@
 
 ![screenshot](/pictures/ssh/Untitled-13.png)
 
-Проверяем, что получилось командой git remote -v.
+Проверяем, что получилось командой `git remote -v`.
 
 ![screenshot](/pictures/ssh/Untitled-14.png)
