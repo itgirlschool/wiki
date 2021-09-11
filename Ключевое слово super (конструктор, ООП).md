@@ -129,4 +129,5 @@ Super также можно использовать в объекте иниц�
      Object.setPrototypeOf(obj2, obj1);
      obj2.method2(); // выведет "method 1"
 
-    Спецификации и поддержку браузерами см. [здесь].(https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/super)
+
+Спецификации и поддержку браузерами см. [здесь].(https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/super)
