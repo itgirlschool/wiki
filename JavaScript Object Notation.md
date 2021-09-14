@@ -35,7 +35,7 @@ _Строка_ очень похожа на литерал одноимённо�
         "address": {
             "streetAddress": "Downing str, 10",
             "city": "London",
-            "postalCode": SW1A 2AA
+            "postalCode": "SW1A 2AA"
         },
         "phoneNumbers": [
             "020 123-1234",
