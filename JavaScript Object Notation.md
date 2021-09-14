@@ -46,100 +46,100 @@ _Строка_ очень похожа на литерал одноимённо�
 ## Стандарт JSON:
 
 >JSON = null
-
->    or true or false
-
->    or JSONNumber
-
->    or JSONString
-
->    or JSONObject
-
->    or JSONArray
+>
+>         or true or false
+>
+>         or JSONNumber
+>
+>         or JSONString
+>
+>         or JSONObject
+>
+>         or JSONArray
 >
 >JSONNumber = - PositiveNumber
-
+>
 >          or PositiveNumber
-
+>
 >PositiveNumber = DecimalNumber
-
+>
 >              or DecimalNumber . Digits
-
+>
 >              or DecimalNumber . Digits ExponentPart
-
+>
 >              or DecimalNumber ExponentPart
-
+>
 >DecimalNumber = 0
-
+>
 >             or OneToNine Digits
-
+>
 >ExponentPart = e Exponent
-
+>
 >            or E Exponent
-
+>
 >Exponent = Digits
-
+>
 >        or + Digits
-
+>
 >        or - Digits
-
+>
 >Digits = Digit
-
+>
 >      or Digits Digit
-
+>
 >Digit = 0 through 9
-
+>
 >OneToNine = 1 through 9
-
 >
-
+>
+>
 >JSONString = ""
-
+>
 >          or " StringCharacters "
-
+>
 >StringCharacters = StringCharacter
-
+>
 >                or StringCharacters StringCharacter
-
+>
 >StringCharacter = any character
-
+>
 >                  except " or \ or U+0000 through U+001F
-
+>
 >               or EscapeSequence
-
+>
 >EscapeSequence = \" or \/ or \\ or \b or \f or \n or \r or \t
-
+>
 >              or \u HexDigit HexDigit HexDigit HexDigit
-
+>
 >HexDigit = 0 through 9
-
+>
 >        or A through F
-
+>
 >        or a through f
-
 >
-
+>
+>
 >JSONObject = { }
-
->          or { Members }
-
->Members = JSONString : JSON
-
->       or Members , JSONString : JSON
-
 >
-
+>          or { Members }
+>
+>Members = JSONString : JSON
+>
+>       or Members , JSONString : JSON
+>
+>
+>
 >JSONArray = [ ]
-
+>
 >         or [ ArrayElements ]
-
+>
 >ArrayElements = JSON
-
+>
 >             or ArrayElements , JSON
 
 
 
-Во всех продукциях могут присутствовать незначащие пробельные символы, за исключением продукций `JSONNumber` (числа не должны содержать пробелов) и `JSONString` (где они интерпретируются как часть строки или возбуждают ошибку). Пробельными символами считаются символы табуляции (U+0009), возврата каретки (U+000D), перевода строки (U+000A) и, собственно, пробела (U+0020).
+Незначащие пробельные символы разрешены везде, за исключением употребления с `JSONNumber` (числа не должны содержать пробелов) и `JSONString` (где они интерпретируются как часть строки или вызывают ошибку). Пробельными символами считаются символы табуляции (U+0009), возврата каретки (U+000D), перевода строки (U+000A) и, собственно, пробела (U+0020).
 ## Методы
 
 ### JSON.parse(text[, reviver])
