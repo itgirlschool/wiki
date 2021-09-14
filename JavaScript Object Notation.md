@@ -1,4 +1,4 @@
-#JSON
+# JSON
 
 JSON (англ. JavaScript Object Notation, обычно произносится как /ˈdʒeɪsən/) — текстовый формат обмена данными, основанный на JavaScript. Как и многие другие текстовые форматы, JSON легко читается людьми. Формат JSON был разработан Дугласом Крокфордом.
 
@@ -42,3 +42,82 @@ _Строка_ очень похожа на литерал одноимённо�
             "020 123-4567"
         ]
      }
+
+## Стандарт JSON:
+
+>JSON = null
+>    or true or false
+>    or JSONNumber
+>    or JSONString
+>    or JSONObject
+>    or JSONArray
+>
+>JSONNumber = - PositiveNumber
+>          or PositiveNumber
+>PositiveNumber = DecimalNumber
+>              or DecimalNumber . Digits
+>              or DecimalNumber . Digits ExponentPart
+>              or DecimalNumber ExponentPart
+>DecimalNumber = 0
+>             or OneToNine Digits
+>ExponentPart = e Exponent
+>            or E Exponent
+>Exponent = Digits
+>        or + Digits
+>        or - Digits
+>Digits = Digit
+>      or Digits Digit
+>Digit = 0 through 9
+>OneToNine = 1 through 9
+>
+>JSONString = ""
+>          or " StringCharacters "
+>StringCharacters = StringCharacter
+>                or StringCharacters StringCharacter
+>StringCharacter = any character
+>                  except " or \ or U+0000 through U+001F
+>               or EscapeSequence
+>EscapeSequence = \" or \/ or \\ or \b or \f or \n or \r or \t
+>              or \u HexDigit HexDigit HexDigit HexDigit
+>HexDigit = 0 through 9
+>        or A through F
+>        or a through f
+>
+>JSONObject = { }
+>          or { Members }
+>Members = JSONString : JSON
+>       or Members , JSONString : JSON
+>
+>JSONArray = [ ]
+>         or [ ArrayElements ]
+>ArrayElements = JSON
+>             or ArrayElements , JSON
+
+Во всех продукциях могут присутствовать незначащие пробельные символы, за исключением продукций `JSONNumber` (числа не должны содержать пробелов) и `JSONString` (где они интерпретируются как часть строки или возбуждают ошибку). Пробельными символами считаются символы табуляции (U+0009), возврата каретки (U+000D), перевода строки (U+000A) и, собственно, пробела (U+0020).
+## Методы
+
+### JSON.parse(text[, reviver])
+Разбирает строку JSON, возможно с преобразованием получаемого значения и его свойств и возвращает разобранное значение.
+
+### JSON.stringify(value[, replacer[, space]])
+Возвращает строку JSON, соответствующую указанному значению, возможно с включением только определённых свойств или с заменой значений свойств определяемым пользователем способом.
+
+Ещё один пример использования JSON:
+
+     {
+       "browsers": {
+         "firefox": {
+           "name": "Firefox",
+           "pref_url": "about:config",
+           "releases": {
+             "1": {
+               "release_date": "2004-11-09",
+               "status": "retired",
+               "engine": "Gecko",
+               "engine_version": "1.7"
+             }
+           }
+         }
+       }
+     }
+     
